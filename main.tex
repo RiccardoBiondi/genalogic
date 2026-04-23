@@ -1,0 +1,59 @@
+\documentclass[style=default]{genealogic}
+\begin{document}
+
+\tableofcontents
+
+% --- RAMO MATERNO ---
+\part{Ramo Materno: Famiglia Bianchi}
+% Partiamo dalla bisnonna, quindi la prima generazione presente è la 1
+\SetStartingGeneration{1}
+
+\Generation % Visualizzerà: Generazione 1
+
+\DeclarePerson{mario1880}[
+  nome={Mario Rossi},
+  padre={Gioacchino Rossi},
+  nascita={1880},
+  morte={1950}
+]{
+  Mario fu un pioniere della viticoltura nella valle. 
+  La sua eredità agricola è documentata negli archivi comunali.
+}
+
+\Generation % Visualizzerà: Generazione 2
+\DeclarePerson{giovanni1900}[
+  nome={Giovanni Rossi},
+  padre={\GetLinkName{mario1880}}, % Riferimento cliccabile
+  nascita={1910}
+]{
+  Giovanni continuò il lavoro del padre, espandendo i possedimenti.
+}
+
+% --- RAMO PATERNO ---
+\part{Ramo Paterno: Famiglia Esposito}
+% Partiamo dal nonno, quindi la prima generazione presente è la 2
+\SetStartingGeneration{2}
+
+\Generation % Visualizzerà: Generazione 2 (perché Capitolo 1 + Offset 1)
+
+\DeclarePerson{gennaro1885}[nome={Gennaro Esposito}]{Note}
+\DeclarePerson{vincenzo1885}[nome={Vincenzo Esposito}]{Note}
+
+
+
+\SetStartingGeneration{1}
+\Generation % Deve stampare 1
+\Generation % Deve stampare 2
+
+\part{Altro Ramo}
+\SetStartingGeneration{3}
+\Generation % Deve stampare 3
+
+%\Person{gennaro1885}{Gennaro Esposito}
+%Il nonno paterno.
+
+%\Generation % Visualizzerà: Generazione 3
+%\Person{vincenzo1920}{Vincenzo Esposito}
+%Tuo padre.
+
+\end{document}

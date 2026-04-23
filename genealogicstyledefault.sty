@@ -1,0 +1,38 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{genealogicstyledefault}[2026/04/22 v1.0 Stile Default]
+
+\RequirePackage{titlesec}
+
+% --- Formattazione Titoli ---
+
+% Come appare "Generazione X"
+\newcommand{\PrintGenerationTitle}[1]{%
+  \chapter*{GENERAZIONE #1}%
+  \addcontentsline{toc}{chapter}{Generazione #1}%
+  
+}
+
+% Come appare il nome della persona nella sezione
+\newcommand{\PrintPersonTitle}[2]{%
+  \section*{#1 \quad #2}%
+  \addcontentsline{toc}{section}{#1 \ #2}%
+}
+
+% --- Formattazione Box Dati ---
+% #1=Padre, #2=Madre, #3=Nascita, #4=Morte
+\newcommand{\PrintPersonData}[4]{%
+  \noindent\begin{minipage}{\textwidth}
+    \small
+    \begin{tabular}{ll}
+      \textbf{Padre:} & #1 \\
+      \textbf{Madre:} & #2 \\
+      \textbf{Periodo:} & #3\ -- #4 \\
+    \end{tabular}
+  \end{minipage}\par
+}
+
+% Setup opzionale di titlesec per gestire spazi se necessario
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\endinput

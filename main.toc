@@ -1,0 +1,13 @@
+\contentsline {part}{I\hspace {1em}Ramo Materno: Famiglia Bianchi}{3}{part.1}%
+\contentsline {chapter}{Generazione 0}{5}{chapter*.2}%
+\contentsline {section}{0.0 \ Mario Rossi}{5}{section*.3}%
+\contentsline {chapter}{Generazione 0}{7}{chapter*.4}%
+\contentsline {section}{0.0 \ Giovanni Rossi}{7}{section*.5}%
+\contentsline {part}{II\hspace {1em}Ramo Paterno: Famiglia Esposito}{9}{part.2}%
+\contentsline {chapter}{Generazione 1}{11}{chapter*.6}%
+\contentsline {section}{1.0 \ Gennaro Esposito}{11}{section*.7}%
+\contentsline {section}{1.0 \ Vincenzo Esposito}{11}{section*.7}%
+\contentsline {chapter}{Generazione 0}{13}{chapter*.8}%
+\contentsline {chapter}{Generazione 0}{15}{chapter*.9}%
+\contentsline {part}{III\hspace {1em}Altro Ramo}{17}{part.3}%
+\contentsline {chapter}{Generazione 2}{19}{chapter*.10}%
